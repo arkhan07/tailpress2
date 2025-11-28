@@ -63,7 +63,7 @@
 								</div>
 
 								<!-- Dropdown Desktop menu -->
-								<div id="dropdownNavbar" class="absolute left-0 top-full mt-2 z-50 hidden font-bold bg-darkblue rounded-lg shadow md:w-[700px] pe-8 ps-2">
+								<div id="dropdownNavbar" class="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 hidden font-bold bg-darkblue rounded-lg shadow md:w-[700px] pe-8 ps-2">
 										<div class="w-fit">
 											<ul class="py-2 text-2xl text-white" aria-labelledby="dropdownLargeButton">
 												<li>
