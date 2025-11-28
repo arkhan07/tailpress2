@@ -53,7 +53,7 @@
 							<li>
 								<a href="https://payouhr.com/fitur" class="block md:text-darkblue text-white px-[6px] md:py-[1px] py-[10px] rounded-md hover:text-white hover:bg-darkblue">Fitur</a>
 							</li>
-							<li>
+							<li class="relative">
 								<div class="hidden md:block">
 									<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full px-[6px] md:py-[1px] py-[10px] text-darkblue rounded hover:bg-darkblue md:border-0 hover:text-white">Solusi
 										<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -63,8 +63,7 @@
 								</div>
 
 								<!-- Dropdown Desktop menu -->
-								<div class="hidden md:inline">
-									<div id="dropdownNavbar" class="z-10 hidden font-bold bg-darkblue rounded-lg shadow md:w-[700px] pe-8 ps-2">
+								<div id="dropdownNavbar" class="absolute left-0 top-full mt-2 z-50 hidden font-bold bg-darkblue rounded-lg shadow md:w-[700px] pe-8 ps-2">
 										<div class="w-fit">
 											<ul class="py-2 text-2xl text-white" aria-labelledby="dropdownLargeButton">
 												<li>
@@ -127,7 +126,6 @@
 											</ul>
 										</div>
 									</div>
-								</div>
 
 								<!-- Dropdown mobile menu -->
 								<div class="relative w-full overflow-hidden mx-auto md:hidden">
