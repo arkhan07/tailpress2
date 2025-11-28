@@ -227,12 +227,33 @@
 			</nav>
 
 			<script>
+				// Toggle dropdown "Solusi" menu
+				document.addEventListener('DOMContentLoaded', function() {
+					const dropdownButton = document.getElementById('dropdownNavbarLink');
+					const dropdownMenu = document.getElementById('dropdownNavbar');
+
+					if (dropdownButton && dropdownMenu) {
+						dropdownButton.addEventListener('click', function(e) {
+							e.preventDefault();
+							dropdownMenu.classList.toggle('hidden');
+						});
+
+						// Close dropdown when clicking outside
+						document.addEventListener('click', function(event) {
+							if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+								dropdownMenu.classList.add('hidden');
+							}
+						});
+					}
+				});
+
+				// Toggle submenu content (Rules/Bisnis)
 				function toggleNavbarContent(navContentId, activeNavButtonId) {
 					const navContentElements = document.querySelectorAll('.nav-content');
 					const navButtonElements = document.querySelectorAll('.nav-button');
 
 					navContentElements.forEach((navContent) => {
-						navContent.style.display = 'none'; // Hide all nav-content initially
+						navContent.style.display = 'none';
 					});
 
 					navButtonElements.forEach((navButton) => {
@@ -244,13 +265,15 @@
 					const activeNavContent = document.getElementById(navContentId);
 					const activeNavButton = document.getElementById(activeNavButtonId);
 
-					activeNavContent.style.display = 'flex'; // Display the selected nav-content
+					activeNavContent.style.display = 'flex';
 					activeNavButton.classList.add('border-darkblue');
 					activeNavButton.classList.remove('bg-transparent');
 				}
 
 				// Initialize the active state on load
-				toggleNavbarContent('nav-content1', 'nav-button1');
+				document.addEventListener('DOMContentLoaded', function() {
+					toggleNavbarContent('nav-content1', 'nav-button1');
+				});
 			</script>
 
 			<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
