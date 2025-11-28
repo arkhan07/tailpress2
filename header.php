@@ -68,8 +68,8 @@
 										<div class="w-fit">
 											<ul class="py-2 text-2xl text-white" aria-labelledby="dropdownLargeButton">
 												<li>
-													<button id="nav-button1" class="nav-button w-fit m-5 transition-transform transform hover:scale-110" onclick="toggleNavbarContent('nav-content1', 'nav-button1')">
-														<a href="#" class="px-4 py-2 rounded bg-white text-darkblue">Rules</a>
+													<button id="nav-button1" class="nav-button w-fit m-5 transition-transform transform hover:scale-110 px-4 py-2 rounded bg-white text-darkblue" onclick="toggleNavbarContent('nav-content1', 'nav-button1')">
+														Rules
 													</button>
 
 													<!-- Content -->
@@ -95,8 +95,8 @@
 													<!-- End Content -->
 												</li>
 												<li>
-													<button id="nav-button2" class="nav-button w-fit m-5 transition-transform transform hover:scale-110" onclick="toggleNavbarContent('nav-content2', 'nav-button2',)">
-														<a href="#" class="px-4 py-2 rounded bg-white text-darkblue">Bisnis</a>
+													<button id="nav-button2" class="nav-button w-fit m-5 transition-transform transform hover:scale-110 px-4 py-2 rounded bg-white text-darkblue" onclick="toggleNavbarContent('nav-content2', 'nav-button2')">
+														Bisnis
 													</button>
 
 													{{-- Content --}}
